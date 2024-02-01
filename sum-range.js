@@ -1,9 +1,25 @@
 function range(start, end, step = 1) {
-  // Add code.
+  let number = []; 
+   if(start < end){
+      for(let i = start; i <= end; i += step){ 
+     	 number.push(i);
+      }
+   }
+   else if (start > end){
+    for(let i = start; i >= end; i += step){ 
+      number.push(i);
+   }
+  }
+   return number;
 }
 
 function sum(numbers) {
-  // Add code.
+  let sum = 0
+	for (let i = 0; i < numbers.length; i++){
+	sum += numbers[i];
+	}
+  console.log(sum)
+  return sum;
 }
 
 
